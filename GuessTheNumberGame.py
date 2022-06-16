@@ -1,3 +1,5 @@
+#Guess The Number Game by Nischal Dhakal
+
 import random  # Import the random module
 from turtle import delay  # Import the delay module
 
@@ -33,6 +35,8 @@ while i != 0 and guessed_number != target:
     # if-else loop starts here
     if(guessed_number == target):
         print(f"You guessed the number correctly in {total-i} attempts.")
+        print(f"You still have {i} attempts left.")
+        print(f"Score : {(total-i )* 1234}")
     elif(guessed_number > target):
         print("The number is less than the entered number")
     elif(guessed_number < target):
@@ -41,7 +45,7 @@ while i != 0 and guessed_number != target:
         print("You have entered an invalid number")
     # if-else loop ends here
 
-    if i>0:
+    if i>0 and guessed_number != target:
         print(f"You have {i} attempts left.")
         # Show the remaining attempts to the user
     

@@ -28,6 +28,7 @@ while i != 0 and guessed_number != target:
 
     guessed_number = int(input("Guess the number from 1-100 : "))
     # Ask the user to guess the number
+   
 
     # if-else loop starts here
     if(guessed_number == target):
@@ -40,5 +41,11 @@ while i != 0 and guessed_number != target:
         print("You have entered an invalid number")
     # if-else loop ends here
 
-    print(f"You have {i} attempts left.")
-    # Show the remaining attempts to the user
+    if i>0:
+        print(f"You have {i} attempts left.")
+        # Show the remaining attempts to the user
+    
+    if i==0:
+        print("You have used all your attempts. Game Over.")
+        break
+        # Show the message to the user that he has used all the attempts

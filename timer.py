@@ -6,7 +6,7 @@ def countdown(n):
         mins, secs = divmod(n, 60)
         # divmod function divides the number in two parts.
         timer = f'{mins:02d}:{secs:02d}'
-        # f string is used to format the output.
+        # f string is used to format the output and timer is the variable which holds the time in string format (mins:secs)
         print(timer, end='\r')
         # end='\r' is used to print the output in the same line.
         time.sleep(1)

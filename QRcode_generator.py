@@ -10,7 +10,7 @@ folder = input(
     "Enter the folder full address where the QRcode will be stored: ")
 name = input("Enter the name of the file: ")
 ext = input("Enter the extension of the file: ")
-# Taking the name and extension of the file
+# Taking the location, name and extension of the file
 
 img.save(f"{folder}{name}.{ext}")
 # Saving the QRcode in the specified location

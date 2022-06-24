@@ -51,5 +51,6 @@ while i != 0 and guessed_number != target:
     
     if i==0:
         print("You have used all your attempts. Game Over.")
+        print(f"The number is {target}")
         break
         # Show the message to the user that he has used all the attempts

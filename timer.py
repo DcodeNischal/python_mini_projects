@@ -1,4 +1,5 @@
 import time  # Import the time module
+from playsound import playsound
 
 
 def countdown(n):
@@ -15,6 +16,7 @@ def countdown(n):
         # n is decremented by 1.
     print('\n')
     print('Time is up!')
+    playsound('mixkit-alarm-clock-beep-988.wav')
     # printing the message when time is up.
 
 

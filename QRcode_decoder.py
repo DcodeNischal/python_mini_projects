@@ -22,3 +22,4 @@ print(f"The Qrcode contains this data : {result[0].data.decode('utf-8')}")
 #[Decoded(data=b'nischal Dhakal', type='QRCODE', rect=Rect(left=40, top=40, width=210, height=210), polygon=[Point(x=40, y=40), Point(x=40, y=250), Point(x=250, y=250), Point(x=250, y=40)], quality=1, orientation='UP')]
 # the first element of the array is the data in the QRcode which is the data that is encoded in the QRcode
 # to get the data in the result, we use .data function and decode it to human readable format using .decode('utf-8') function
+#
